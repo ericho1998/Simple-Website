@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pictures</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<link rel="stylesheet" type = "text/css" href="picstyles.css">
+</head>
+<body>
+
+<div class="header">
+	<h1>Eric's Website</h1>
+</div>
+<!-- Create Navbar -->
+<div class="navbar">
+	<a href="Homepage.html">Main Page</a>
+	<a href="mailto:XXXXXXXX@gmail.com" class="right">Contact</a> 
+</div>
+
+<!-- Button to go back to the top of the page -->
+<button onclick="topFunction()" id="Btn" title="Go to top">&#8743;</button>
+
+<div>
+	<h3>Portrait Photos</h3>
+</div>
+<!-- Slideshow for the Images in Portrait Format -->
+<div class="containerP">
+	<div class="SlidesP">
+		<div class="numbertextP">1 / 3</div>
+		<img src="./Pics/IMG_2758.JPG"	style="width:100%" alt="cacti">
+	</div>	
+
+	<div class="SlidesP">
+		<div class="numbertextP">2 / 3</div>
+		<img src="./Pics/IMG_2606.JPG"	style="width:100%" alt="creek">
+	</div>
+	
+	<div class="SlidesP">
+		<div class="numbertextP">3 / 3</div>
+		<img src="./Pics/IMG_2740.JPG"	style="width:100%" alt="flowers">
+	</div>
+
+	<a class="prev" onclick="plusSlidesP(-1)">&#10094;</a>
+	<a class="next" onclick="plusSlidesP(1)">&#10095;</a>
+
+
+	<!-- Generate Thumbnail Images -->
+	<div class="row">
+		<div class="portraitcolumn">
+			<img class="indP cursor" src="./Pics/IMG_2758.JPG" style="width:100%" onclick="currentSlideP(1)">
+		</div>
+		<div class="portraitcolumn">
+			<img class="indP cursor" src="./Pics/IMG_2606.JPG" style="width:100%" onclick="currentSlideP(2)">
+		</div>
+		<div class="portraitcolumn">
+			<img class="indP cursor" src="./Pics/IMG_2740.JPG" style="width:100%" onclick="currentSlideP(3)">
+		</div>
+	</div>
+</div>
+
+<div>
+	<h3>Landscape Photos</h3>
+</div>
+<!-- Slideshow for the Images in Landscape Format-->
+<div class="containerL">
+	<div class="SlidesL">
+		<div class="numbertext">1 / 5</div>
+		<img src="./Pics/IMG_2597.JPG"	style="width:100%" alt="squirrel">
+	</div>	
+
+	<div class="SlidesL">
+		<div class="numbertext">2 / 5</div>
+		<img src="./Pics/Charlie Lake.jpg"	style="width:100%" alt="lake">
+	</div>
+	
+	<div class="SlidesL">
+		<div class="numbertext">3 / 5</div>
+		<img src="./Pics/IMG_2781.JPG"	style="width:100%" alt="flower">
+	</div>
+
+	<div class="SlidesL">
+		<div class="numbertext">4 / 5</div>
+		<img src="./Pics/honk.JPG"	style="width:100%" alt="goose">
+	</div>
+
+	<div class="SlidesL">
+		<div class="numbertext">5 / 5</div>
+		<img src="./Pics/IMG_2546.jpg"	style="width:100%" alt="cat">
+	</div>
+
+	<a class="prev" onclick="plusSlidesL(-1)">&#10094;</a>
+	<a class="next" onclick="plusSlidesL(1)">&#10095;</a>
+
+
+	<!-- Generate Thumbnail Images -->
+	<div class="row">
+		<div class="landscapecolumn">
+			<img class="ind cursor" src="./Pics/IMG_2597.JPG" style="width:100%" onclick="currentSlideL(1)">
+		</div>
+		<div class="landscapecolumn">
+			<img class="ind cursor" src="./Pics/Charlie Lake.jpg" style="width:100%" onclick="currentSlideL(2)">
+		</div>
+		<div class="landscapecolumn">
+			<img class="ind cursor" src="./Pics/IMG_2781.JPG" style="width:100%" onclick="currentSlideL(3)">
+		</div>
+		<div class="landscapecolumn">
+			<img class="ind cursor" src="./Pics/honk.JPG" style="width:100%" onclick="currentSlideL(4)">
+		</div>
+		<div class="landscapecolumn">
+			<img class="ind cursor" src="./Pics/IMG_2546.jpg" style="width:100%" onclick="currentSlideL(5)">
+		</div>
+	</div>
+</div>
+
+<script src="scripts.js"></script>
+</body>
+</html>

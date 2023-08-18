@@ -1,0 +1,176 @@
+.header {
+	padding: 50px;
+	text-align: center;
+	background: lightblue;
+	color: #4B4B4B;
+}
+
+.header h1 {
+	font-size: 30px;
+}
+
+h3 {
+    padding: 30px;
+    text-align: center;
+    background: rgb(224, 245, 252);
+    color:#4B4B4B;
+}
+.navbar {
+	overflow: hidden;
+	background-color: #222;
+	
+}
+
+.navbar a {
+	float: left;
+	display: block;
+	color: #F2F2F2;
+	text-align: center;
+	padding: 10px 15px;
+	text-decoration: none;
+}
+
+.navbar a.right {
+	float: right;
+}
+
+.navbar a:hover {
+	background-color: #F2F2F2;
+	color: black;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #F2F2F2;
+	font-family: Corbel, Verdana, Sans-serif;
+	margin: 0;
+	text-decoration: none;
+}
+
+#Btn {
+    display: none;
+    position: fixed;
+    bottom: 15px;
+    right: 23px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #525252;
+    color: #F2F2F2;
+    cursor: pointer;
+    padding: 15px 18px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+#Btn:hover{
+    background-color: #5555;
+}
+
+.img {
+	vertical-align: middle;
+}
+.containerP {
+	position: relative;
+    margin: auto;
+    max-width: 550px;
+}
+
+.containerL {
+    position: relative;
+    margin: auto;
+    max-width: 1000px;
+}
+
+.SlidesL {
+	display: none;
+}
+
+.SlidesP {
+    display: none;
+}
+
+.cursor {
+	cursor: pointer;
+}
+
+.prev,
+.next{
+	cursor: pointer;
+	position: absolute;
+	background-color: rgba(100,100,100,0.5);
+	top: 50%;
+	width: auto;
+	padding: 18px;
+    margin-top: -100px;
+	color: #F2F2F2;
+	font-weight: bold;
+	font-size: 22px;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+	-webkit-user-select: none;
+}
+
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+	background-color: rgba(60,60,60,0.9);
+}
+
+.numbertext {
+	color: #F2F2F2;
+	font-size: 13px;
+	padding: 10px 10px;
+	position: absolute;
+	top: 0;
+}
+.numbertextP {
+	color: #F2F2F2;
+	font-size: 13px;
+	padding: 10px 10px;
+	position: absolute;
+	top: 0;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.landscapecolumn {
+	float: left;
+	width: 20%;
+}
+
+.portraitcolumn {
+    float: left;
+    width: 33.33%;
+}
+
+.ind {
+	opacity: 0.7;
+}
+
+.indP {
+    opacity: 0.7;
+}
+
+.active,
+.ind:hover,
+.indP:hover {
+	opacity: 1;
+}
+
+@media screen and  (max-width: 700px) {
+	.row {
+		flex-direction: column;
+	}
+}
